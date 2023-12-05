@@ -23,6 +23,7 @@ code {
   z-index: -1;
 }
 .card {
+  box-shadow: 0 0 10px 1px dimgray;
   transition: box-shadow 0.2s;
 }
 .card:hover {
