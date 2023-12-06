@@ -29,7 +29,7 @@ function App() {
       {/* Background video for visual appeal */}
       <video
         id="background-video"
-        src="/backgroundVideo.mp4"
+        src="/assets/Videos/backgroundVideo.mp4"
         autoPlay
         loop
         muted
