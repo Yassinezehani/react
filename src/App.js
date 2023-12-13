@@ -11,17 +11,7 @@ import { Card } from "react-bootstrap";
 
 // The main component for the entire application
 function App() {
-  const [userName, setUserName] = useState(null);
-  const [showModal, setShowModal] = useState(true);
-
-  const handleClose = () => setShowModal(false);
-
-  const handleNameSubmit = (e) => {
-    e.preventDefault();
-    const name = e.target.elements.name.value || "";
-    setUserName(name);
-    handleClose();
-  };
+  const userName = "Yassin";
 
   // Rendering the main structure of the application
   return (
@@ -56,14 +46,8 @@ function App() {
       {userName && <UserImage className="user-image" />}
 
       {/* Greeting message with the default or provided username */}
-      <h3 className="text-light">Hello, {userName || "there"}!</h3>
+      <h3 className="text-light">Hello, {userName || "there!"}</h3>
 
-      {/* ModalInput to get the first name from the user */}
-      <ModalInput
-        showModal={showModal}
-        handleClose={handleClose}
-        handleNameSubmit={handleNameSubmit}
-      />
     </div>
   );
 }
